@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: gcr.io/cybage-devops/spring-boot-hello-world:63
+        image: gcr.io/cybage-devops/spring-boot-hello-world:64
         ports:
         - containerPort: 8084
