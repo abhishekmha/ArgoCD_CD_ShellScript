@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mipod
+  labels:
+    name: abhishek
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: abhishek
+  template:
+    metadata:
+      labels:
+        name: abhishek
+    spec:
+     containers:
+     - image: banik123/linuxos:v5
+       name: machineinfo
+       ports:
+         - containerPort: 8000
